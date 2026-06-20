@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekonomi Kreatif Sumedang</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* =========================
+   HERO (BACKGROUND FOTO)
+========================= */
+
+.hero{
+    min-height:60vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    
+    /* =========================
+       GANTI FOTO KAMU DI SINI
+    ========================= */
+    url('assets/Ekonomikreatif.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.hero p{
+    margin-top:10px;
+    max-width:700px;
+}
+
+/* =========================
+   KONTEN
+========================= */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+/* MENU */
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.menu-item{
+    background:linear-gradient(135deg,#0D2B5C,#17448a);
+    color:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.menu-item:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+/* BACK BUTTON */
+
+.back{
+    text-align:center;
+    margin-top:50px;
+}
+
+.back a{
+    background:#0D2B5C;
+    color:white;
+    padding:12px 30px;
+    border-radius:50px;
+    text-decoration:none;
+}
+
+.back a:hover{
+    background:#17448a;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:55vh;
+
+        /* biar fokus gambar tetap bagus */
+        background-position:center top;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>Ekonomi Kreatif</h1>
+
+    <p>
+        Mengembangkan potensi lokal melalui karya kreatif
+        masyarakat Sumedang yang bernilai budaya dan ekonomi.
+    </p>
+
+</section>
+
+<!-- KONTEN -->
+
+<div class="container">
+
+    <div class="menu">
+
+        <a href="batik.html" class="menu-item">
+            🎨 Batik Sumedang
+        </a>
+
+        <a href="bambu.html" class="menu-item">
+            🎋 Kerajinan Bambu
+        </a>
+
+        <a href="kopi.html" class="menu-item">
+            ☕ Kopi Sumedang
+        </a>
+
+        <a href="tahu.html" class="menu-item">
+            🧈 Tahu Sumedang
+        </a>
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">← Kembali ke Beranda</a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebudayaan & Tradisi Sumedang</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* =========================
+   HERO (BACKGROUND UTAMA)
+========================= */
+
+.hero{
+    min-height:60vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    
+    /* =========================
+       GANTI GAMBAR DI SINI
+    ========================= */
+    url('assets/kebudayaandantradisi.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.hero p{
+    margin-top:10px;
+    max-width:700px;
+}
+
+/* =========================
+   KONTEN
+========================= */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+/* FOTO ISI */
+
+.foto{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.foto img{
+    width:900px;
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* DESKRIPSI */
+
+.deskripsi{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:40px;
+}
+
+.deskripsi p{
+    text-align:justify;
+    margin-bottom:15px;
+}
+
+/* =========================
+   MENU ESTETIK
+========================= */
+
+.menu-budaya{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.menu-item{
+    background:linear-gradient(135deg,#0D2B5C,#17448a);
+    color:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.menu-item:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+/* TOMBOL KEMBALI */
+
+.kembali{
+    text-align:center;
+    margin-top:50px;
+}
+
+.kembali a{
+    background:#0D2B5C;
+    color:white;
+    padding:12px 30px;
+    border-radius:50px;
+    text-decoration:none;
+}
+
+.kembali a:hover{
+    background:#17448a;
+}
+
+/* =========================
+   RESPONSIVE (WAJIB)
+========================= */
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:55vh;
+
+        /* biar wajah/orang di foto tidak kepotong */
+        background-position:center top;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>Kebudayaan & Tradisi</h1>
+
+    <p>
+        Ngajaga jeung ngalestarikeun budaya khas Sumedang
+        anu pinuh ku nilai jeung filosofi kahirupan.
+    </p>
+
+</section>
+
+<!-- KONTEN -->
+
+<div class="container">
+
+    <!-- DESKRIPSI -->
+    <div class="deskripsi">
+
+        <p>
+            Kabupaten Sumedang memiliki beragam kebudayaan dan tradisi yang masih dilestarikan hingga saat ini. 
+            Kesenian dan upacara adat menjadi bagian penting dalam kehidupan masyarakat.
+        </p>
+
+        <p>
+            Tradisi ini bukan hanya hiburan, tetapi juga memiliki nilai spiritual, sosial, dan filosofi yang mendalam.
+        </p>
+
+    </div>
+
+    <!-- MENU PILIHAN -->
+
+    <div class="menu-budaya">
+
+        <a href="tariumbul.html" class="menu-item">
+            💃 Tari Umbul
+        </a>
+
+        <a href="kudarenggong.html" class="menu-item">
+            🐎 Kuda Renggong
+        </a>
+
+        <a href="ngalaksa.html" class="menu-item">
+            🌾 Ngalaksa
+        </a>
+
+        <a href="tarawangsa.html" class="menu-item">
+            🎶 Tarawangsa
+        </a>
+
+    </div>
+
+    <!-- KEMBALI -->
+
+    <div class="kembali">
+        <a href="index.html">← Kembali ke Beranda</a>
+    </div>
+
+</div>
+
+</body>
+</html>

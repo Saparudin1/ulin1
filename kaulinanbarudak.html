@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kaulinanbarudak</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* HEADER */
+
+.hero{
+    background:#0D2B5C;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* =========================
+   SLIDER (GESER)
+========================= */
+
+.galeri{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    scroll-snap-type:x mandatory;
+    padding-bottom:10px;
+}
+
+/* SCROLL BAR */
+
+.galeri::-webkit-scrollbar{
+    height:8px;
+}
+
+.galeri::-webkit-scrollbar-thumb{
+    background:#0D2B5C;
+    border-radius:10px;
+}
+
+/* ITEM FOTO */
+
+.foto{
+    flex:0 0 60%; /* LAPTOP */
+    scroll-snap-align:center;
+
+    background:white;
+    padding:15px;
+    border-radius:20px;
+}
+
+/* GAMBAR (AMAN UNTUK A4) */
+
+.foto img{
+    width:100%;
+    height:auto; /* PENTING BIAR TIDAK KE POTONG */
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* DESKRIPSI */
+
+.deskripsi{
+    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.deskripsi p{
+    text-align:justify;
+}
+
+/* BACK BUTTON */
+
+.back{
+    text-align:center;
+    margin-top:40px;
+}
+
+.back a{
+    display:inline-block;
+    background:#0D2B5C;
+    color:white;
+    padding:12px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.back a:hover{
+    background:#17448a;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .foto{
+        flex:0 0 85%; /* HP lebih lebar */
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<section class="hero">
+    <h1>Kaulinan Barudak</h1>
+</section>
+
+<!-- KONTEN -->
+
+<div class="container">
+
+    <!-- GALERI -->
+    <div class="galeri">
+
+        <!-- GANTI GAMBAR DI SINI -->
+        <div class="foto">
+            <img src="assets/kaulinanbarudak0.jpeg" alt="Tari Umbul 1">
+        </div>
+
+        <div class="foto">
+            <img src="assets/kaulinan.jpeg" alt="Tari Umbul 2">
+        </div>
+
+        <div class="foto">
+            <img src="assets/kaulinan1.jpeg" alt="Tari Umbul 3">
+        </div>
+         <div class="foto">
+            <img src="assets/kaulinan2.jpeg" alt="Tari Umbul 3">
+        </div>
+
+    </div>
+
+    <!-- BACK -->
+    <div class="back">
+        <a href="index.html">← Kembali</a>
+    </div>
+
+</div>
+
+</body>
+</html>
